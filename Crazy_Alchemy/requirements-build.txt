@@ -1,0 +1,2 @@
+# Optional build tools for compiling standalone setup.exe / binary distribution:
+pyinstaller>=6.0.0
