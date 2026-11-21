@@ -1,4 +1,4 @@
-# ⚡ Crazy Alchemy v3.0
+# ⚡ Crazy Alchemy v3.0 LadyZi
 ### Next-Generation Windows 11 Firewall, Threat Defense & Active Cyber Deception Suite
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%2011%20%7C%20Windows%2010%20(x64)-0078D4?style=flat&logo=windows)](https://microsoft.com/windows)
@@ -12,13 +12,13 @@
 
 ## 🌟 Executive Summary
 
-**Crazy Alchemy v3.0** (architected by **Vitorius**) is an enterprise-grade endpoint security, firewall orchestration, and proactive deception defense suite engineered specifically for modern Windows 64-bit platforms (Windows 11 & Windows 10). Designed to overcome the opacity, telemetry bloat, and operational limitations of default operating system defenses, Crazy Alchemy combines the granular packet and rule controls of enterprise firewalls with a multi-layered **Tri-Engine Antivirus**, **TrapNet Active Deception Honeypots**, **HoneyToken Ransomware Canaries**, **Cross-Browser Network Guard with Native Ad-Blocking**, and behavioral **Process Lineage Verification**.
+**Crazy Alchemy v3.0 LadyZi** (architected by **Vitorius**) is an enterprise-grade endpoint security, firewall orchestration, and proactive deception defense suite engineered specifically for modern Windows 64-bit platforms (Windows 11 & Windows 10). Designed to overcome the opacity, telemetry bloat, and operational limitations of default operating system defenses, Crazy Alchemy combines the granular packet and rule controls of enterprise firewalls with a multi-layered **Tri-Engine Antivirus**, **TrapNet Active Deception Honeypots**, **HoneyToken Ransomware Canaries**, **Cross-Browser Network Guard with Native Ad-Blocking**, and behavioral **Process Lineage Verification**.
 
 Whether deployed in a zero-trust enterprise environment, an untrusted public Wi-Fi hotspot, a developer workstation with local agentic AI tools (Antigravity), or an esports gaming station requiring ultra-low latency, Crazy Alchemy delivers complete situational awareness and autonomous threat neutralization without degrading system performance.
 
 ---
 
-## 🚀 What's New in Version 3.0
+## 🚀 What's New in Version 3.0 LadyZi
 
 - 🛡️ **Zero Unintended Tool Blocking (Antigravity & Developer Safety)**:
   - Permanent kernel-level loopback (`127.0.0.1`, `::1`) allow rules ensure local AI assistants (Antigravity), IDE backends, language servers, and IPC sockets never get severed.
@@ -139,8 +139,8 @@ Rapidly switch the entire host security posture with a single click:
 ### Manual Setup via Command Prompt
 ```powershell
 # 1. Clone repository
-git clone https://github.com/Vitorius-Crazy-Alchemy/Crazy_Alchemy.git
-cd Crazy_Alchemy
+git clone https://github.com/Vitorius-Crazy-Alchemy/Crazy-Alchemy-AV
+cd Crazy-Alchemy-AV
 
 # 2. Install runtime dependencies
 pip install -r requirements.txt
@@ -148,7 +148,7 @@ pip install -r requirements.txt
 # 3. Seed baseline malware signatures (if not pre-populated)
 python data\signatures\seed_hashes.py
 
-# 4. Launch Crazy Alchemy v3.0
+# 4. Launch Crazy Alchemy v3.0 LadyZi
 python main_win.py
 ```
 
