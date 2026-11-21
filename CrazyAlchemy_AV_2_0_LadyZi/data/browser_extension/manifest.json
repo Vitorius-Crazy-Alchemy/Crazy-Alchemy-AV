@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "Crazy Alchemy Web Shield & Crazy AdBlock",
+  "version": "2.0.0",
+  "description": "Real-time malware, phishing, and crypto-drainer defense powered by Crazy Alchemy Desktop Antivirus, with Crazy-style ultra-fast Ad & Tracker blocking.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage",
+    "alarms",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "Crazy Alchemy Web Shield & Crazy AdBlock",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "adblock_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "blocked.html",
+        "icon48.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "webshield@crazyalchemy.local",
+      "strict_min_version": "109.0"
+    }
+  }
+}
