@@ -1,7 +1,0 @@
-# Crazy Alchemy v2.0 (LadyZi) - Core Python Dependencies
-# Required for running the application, GUI, active shields, and threat intelligence:
-PyQt6>=6.5.0
-psutil>=5.9.0
-watchdog>=3.0.0
-yara-python>=4.3.0
-pywin32>=306
